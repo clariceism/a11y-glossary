@@ -21,4 +21,6 @@
     terms.sort((a, b) => a.textContent.localeCompare(b.textContent));
     terms.forEach(term => termsList.appendChild(term));
     }
+  const sortButton = document.getElementById('sort-button');
+  sortButton.addEventListener('click', sortGlossaryTerms);
 </script>
