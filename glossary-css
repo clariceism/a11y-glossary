@@ -2,7 +2,7 @@
   .match {
     background-color: yellow;
   }
-  dt.match::before {
+  li.match::before {
     content: "🔍 ";
   }
   .form {
