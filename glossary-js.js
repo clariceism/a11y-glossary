@@ -1,4 +1,5 @@
-<><script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
     $(document).ready(function() {$('form').submit(function (event) {
         event.preventDefault(); // Prevent the form from submitting
         var searchTerm = $('#search').val().toLowerCase(); // Get the search term
@@ -14,4 +15,10 @@
         });
     })};
     });
-</script></>
+  function sortGlossaryTerms() {
+    const termsList = document.getElementById('glossary-terms');
+    const terms = Array.from(termsList.children);
+    terms.sort((a, b) => a.textContent.localeCompare(b.textContent));
+    terms.forEach(term => termsList.appendChild(term));
+    }
+</script>
