@@ -1,0 +1,8 @@
+<style>
+  .match {
+    background-color: yellow;
+  }
+  dt.match::before {
+    content: "🔍 ";
+  }
+</style>
