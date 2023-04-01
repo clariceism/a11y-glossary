@@ -5,4 +5,12 @@
   dt.match::before {
     content: "🔍 ";
   }
+  .form {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  margin-right: 10px;
+}
 </style>
